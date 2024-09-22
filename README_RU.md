@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/chugunova24/terminal-draw-graph">
-    <img src="images/graph_f.png" alt="Logo" width="40%" height="40%">
+    <img src="images/graph_f.png" alt="Logo" width="25%">
   </a>
 
 <h3 align="center">
@@ -40,14 +40,24 @@
 
 <div align="center">
   <a href="https://github.com/chugunova24/terminal-draw-graph">
-    <img src="images/terminal_graph_sinx.png" alt="Logo" width="80%" height="80%">
+    <img src="images/terminal_graph_sinx.png" alt="Logo" width="40%">
   </a>
+  <p style="font-style: italic;">Рис.1 График функции sin(x)</p>
 </div>
-
+<br>
 Программа строит график функции в терминале на основе введенного пользователем
 математического выражения.
-Парсер выражения основан на алгоритме Дейкстры для перевода выражения в польскую нотацию (постфиксная нотация).
-График выводится в терминал (область значений [1;-1]).
+Парсер выражения основан на алгоритме Дейкстры для перевода выражения (инфиксная нотация) в польскую нотацию (постфиксная нотация).
+График выводится, отраженный по горизонтали, в терминал.
+
+<br>
+<p>Используются следующие условия:</p>
+<li>Размер поля для отображения графиков - прямоугольник 25 на 80 точек.</li>
+<li>Область определения - [0; 4 Pi]</li>
+<li>Диапазон значений - [-1; 1]</li>
+<li>Ориентация координатной плоскости - ось ординат направлена вниз, ось абсцисс - вправо.</li>
+<li>Центр координат - середина левой границы (точка {0, 12}). </li>
+<li>Значения округляются по правилам математики.</li>
 
 <p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
@@ -85,14 +95,14 @@
 #### Пример 1.
 Введите в терминале следующую команду:
    ```sh
-   ./build/graph "sin(x)"
+   ./build/graph "cos(x)"
    ```
 В результате работы программы в терминал выведется график sin(x):
 <div align="center">
   <a href="https://github.com/chugunova24/terminal-draw-graph">
-    <img src="images/terminal_graph_sinx.png" alt="Logo" width="80%" height="80%">
+    <img src="images/terminal_graph_cosx.png" alt="Logo" width="40%">
   </a>
-  <p style="font-style: italic;">Рис.1 График функции sin(x)</p>
+  <p style="font-style: italic;">Рис.2 График функции cos(x)</p>
 </div>
 
 <p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
